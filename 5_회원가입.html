@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+        .input {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px 20px;
+            margin: 5px 0;
+        }
+        input[type='text']{
+            border: none;
+            border-bottom: 3px solid black;
+        }
+        input[type='text']:focus {
+            border-bottom: 3px dotted black;
+        }
+        input[type='password']{
+            border: none;
+            border-bottom: 3px solid black;
+        }
+        input[type='password']:focus {
+            border-bottom: 3px dotted black;
+        }
+        input[type='birth']{
+            border: none;
+            border-bottom: 3px solid black;
+        }
+        input[type='birth']:focus {
+            border-bottom: 3px dotted black;
+        }   
+        input[type='telephone']{
+            border: none;
+            border-bottom: 3px solid black;
+        }
+        input[type='telephone']:focus {
+            border-bottom: 3px dotted black;
+        }
+    </style>    
+</head>
+<body>
+    <a href="./1_메인.html">back</a>
+    <form action="#">
+        <p>아이디 <input type="text" class="input" maxlength="20" placeholder="사용할 아이디를 입력하세요"></p>
+        <p>비밀번호 <input type="password" class="input" maxlength="20" placeholder="사용할 비밀번호를 입력하세요"></p>
+        <p>생년월일 <input type="birth" class="input" maxlength="8" placeholder=" 생년월일 8자리를 입력하세요"></p>
+        <p>전화번호 <input type="telephone" class="input" maxlength="11" placeholder=" 전화번호를 '-' 없이 입력하세요"></p>
+        <p>남자<input type="radio" name="gender" value="남"> 여자<input type="radio" name="gender" value="여"></p>
+        <p><a href="./1_메인.html"><button type="button">회원가입</button></a></p>
+    </form>
+</body>
+</html>
